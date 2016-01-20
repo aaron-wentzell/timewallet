@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05405FF81C4F187000A6E348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05405FF71C4F187000A6E348 /* AppDelegate.swift */; };
+		05405FFA1C4F187000A6E348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05405FF91C4F187000A6E348 /* ViewController.swift */; };
+		05405FFD1C4F187000A6E348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05405FFB1C4F187000A6E348 /* Main.storyboard */; };
+		05405FFF1C4F187000A6E348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05405FFE1C4F187000A6E348 /* Assets.xcassets */; };
+		054060021C4F187000A6E348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054060001C4F187000A6E348 /* LaunchScreen.storyboard */; };
+		0540600D1C4F187000A6E348 /* TimeWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540600C1C4F187000A6E348 /* TimeWalletTests.swift */; };
+		054060181C4F1A9D00A6E348 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054060171C4F1A9D00A6E348 /* Alamofire.framework */; };
+		054060191C4F1A9D00A6E348 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 054060171C4F1A9D00A6E348 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0540601C1C4F1AA700A6E348 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540601B1C4F1AA700A6E348 /* Realm.framework */; };
+		0540601D1C4F1AA700A6E348 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0540601B1C4F1AA700A6E348 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0540601F1C4F1AB700A6E348 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540601E1C4F1AB700A6E348 /* RealmSwift.framework */; };
+		054060201C4F1AB700A6E348 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0540601E1C4F1AB700A6E348 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		054060241C4F1D8400A6E348 /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060231C4F1D8400A6E348 /* TimeEntry.swift */; };
+		054060261C4F1DA500A6E348 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060251C4F1DA500A6E348 /* Client.swift */; };
+		054060281C4F1DC300A6E348 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060271C4F1DC300A6E348 /* Service.swift */; };
+		0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054060091C4F187000A6E348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05405FEC1C4F187000A6E348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05405FF31C4F187000A6E348;
+			remoteInfo = TimeWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0540601A1C4F1A9D00A6E348 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0540601D1C4F1AA700A6E348 /* Realm.framework in Embed Frameworks */,
+				054060191C4F1A9D00A6E348 /* Alamofire.framework in Embed Frameworks */,
+				054060201C4F1AB700A6E348 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054060211C4F1AC600A6E348 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05405FF41C4F187000A6E348 /* TimeWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05405FF71C4F187000A6E348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05405FF91C4F187000A6E348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05405FFC1C4F187000A6E348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05405FFE1C4F187000A6E348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		054060011C4F187000A6E348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		054060031C4F187000A6E348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054060081C4F187000A6E348 /* TimeWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0540600C1C4F187000A6E348 /* TimeWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWalletTests.swift; sourceTree = "<group>"; };
+		0540600E1C4F187000A6E348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054060171C4F1A9D00A6E348 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0540601B1C4F1AA700A6E348 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		0540601E1C4F1AB700A6E348 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		054060231C4F1D8400A6E348 /* TimeEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeEntry.swift; path = ../TimeEntry.swift; sourceTree = "<group>"; };
+		054060251C4F1DA500A6E348 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = ../Client.swift; sourceTree = "<group>"; };
+		054060271C4F1DC300A6E348 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../Service.swift; sourceTree = "<group>"; };
+		0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDataService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05405FF11C4F187000A6E348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0540601C1C4F1AA700A6E348 /* Realm.framework in Frameworks */,
+				054060181C4F1A9D00A6E348 /* Alamofire.framework in Frameworks */,
+				0540601F1C4F1AB700A6E348 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054060051C4F187000A6E348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05405FEB1C4F187000A6E348 = {
+			isa = PBXGroup;
+			children = (
+				0540601E1C4F1AB700A6E348 /* RealmSwift.framework */,
+				0540601B1C4F1AA700A6E348 /* Realm.framework */,
+				054060171C4F1A9D00A6E348 /* Alamofire.framework */,
+				05405FF61C4F187000A6E348 /* TimeWallet */,
+				0540600B1C4F187000A6E348 /* TimeWalletTests */,
+				05405FF51C4F187000A6E348 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05405FF51C4F187000A6E348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05405FF41C4F187000A6E348 /* TimeWallet.app */,
+				054060081C4F187000A6E348 /* TimeWalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05405FF61C4F187000A6E348 /* TimeWallet */ = {
+			isa = PBXGroup;
+			children = (
+				0540602A1C4F1E2500A6E348 /* Service */,
+				054060291C4F1E1600A6E348 /* Model */,
+				05405FF71C4F187000A6E348 /* AppDelegate.swift */,
+				05405FF91C4F187000A6E348 /* ViewController.swift */,
+				05405FFB1C4F187000A6E348 /* Main.storyboard */,
+				05405FFE1C4F187000A6E348 /* Assets.xcassets */,
+				054060001C4F187000A6E348 /* LaunchScreen.storyboard */,
+				054060031C4F187000A6E348 /* Info.plist */,
+			);
+			path = TimeWallet;
+			sourceTree = "<group>";
+		};
+		0540600B1C4F187000A6E348 /* TimeWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				0540600C1C4F187000A6E348 /* TimeWalletTests.swift */,
+				0540600E1C4F187000A6E348 /* Info.plist */,
+			);
+			path = TimeWalletTests;
+			sourceTree = "<group>";
+		};
+		054060291C4F1E1600A6E348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				054060231C4F1D8400A6E348 /* TimeEntry.swift */,
+				054060251C4F1DA500A6E348 /* Client.swift */,
+				054060271C4F1DC300A6E348 /* Service.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0540602A1C4F1E2500A6E348 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05405FF31C4F187000A6E348 /* TimeWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054060111C4F187000A6E348 /* Build configuration list for PBXNativeTarget "TimeWallet" */;
+			buildPhases = (
+				05405FF01C4F187000A6E348 /* Sources */,
+				05405FF11C4F187000A6E348 /* Frameworks */,
+				05405FF21C4F187000A6E348 /* Resources */,
+				0540601A1C4F1A9D00A6E348 /* Embed Frameworks */,
+				054060211C4F1AC600A6E348 /* CopyFiles */,
+				054060221C4F1AD600A6E348 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeWallet;
+			productName = TimeWallet;
+			productReference = 05405FF41C4F187000A6E348 /* TimeWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		054060071C4F187000A6E348 /* TimeWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054060141C4F187000A6E348 /* Build configuration list for PBXNativeTarget "TimeWalletTests" */;
+			buildPhases = (
+				054060041C4F187000A6E348 /* Sources */,
+				054060051C4F187000A6E348 /* Frameworks */,
+				054060061C4F187000A6E348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0540600A1C4F187000A6E348 /* PBXTargetDependency */,
+			);
+			name = TimeWalletTests;
+			productName = TimeWalletTests;
+			productReference = 054060081C4F187000A6E348 /* TimeWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05405FEC1C4F187000A6E348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Bodhi Tree Technologies";
+				TargetAttributes = {
+					05405FF31C4F187000A6E348 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					054060071C4F187000A6E348 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 05405FF31C4F187000A6E348;
+					};
+				};
+			};
+			buildConfigurationList = 05405FEF1C4F187000A6E348 /* Build configuration list for PBXProject "TimeWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05405FEB1C4F187000A6E348;
+			productRefGroup = 05405FF51C4F187000A6E348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05405FF31C4F187000A6E348 /* TimeWallet */,
+				054060071C4F187000A6E348 /* TimeWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05405FF21C4F187000A6E348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054060021C4F187000A6E348 /* LaunchScreen.storyboard in Resources */,
+				05405FFF1C4F187000A6E348 /* Assets.xcassets in Resources */,
+				05405FFD1C4F187000A6E348 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054060061C4F187000A6E348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		054060221C4F1AD600A6E348 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05405FF01C4F187000A6E348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05405FFA1C4F187000A6E348 /* ViewController.swift in Sources */,
+				05405FF81C4F187000A6E348 /* AppDelegate.swift in Sources */,
+				0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */,
+				054060281C4F1DC300A6E348 /* Service.swift in Sources */,
+				054060261C4F1DA500A6E348 /* Client.swift in Sources */,
+				054060241C4F1D8400A6E348 /* TimeEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054060041C4F187000A6E348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0540600D1C4F187000A6E348 /* TimeWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0540600A1C4F187000A6E348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05405FF31C4F187000A6E348 /* TimeWallet */;
+			targetProxy = 054060091C4F187000A6E348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05405FFB1C4F187000A6E348 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05405FFC1C4F187000A6E348 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		054060001C4F187000A6E348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054060011C4F187000A6E348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0540600F1C4F187000A6E348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		054060101C4F187000A6E348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		054060121C4F187000A6E348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TimeWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodhitree.TimeWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		054060131C4F187000A6E348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TimeWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodhitree.TimeWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		054060151C4F187000A6E348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodhitree.TimeWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeWallet.app/TimeWallet";
+			};
+			name = Debug;
+		};
+		054060161C4F187000A6E348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodhitree.TimeWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeWallet.app/TimeWallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05405FEF1C4F187000A6E348 /* Build configuration list for PBXProject "TimeWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0540600F1C4F187000A6E348 /* Debug */,
+				054060101C4F187000A6E348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054060111C4F187000A6E348 /* Build configuration list for PBXNativeTarget "TimeWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054060121C4F187000A6E348 /* Debug */,
+				054060131C4F187000A6E348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		054060141C4F187000A6E348 /* Build configuration list for PBXNativeTarget "TimeWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054060151C4F187000A6E348 /* Debug */,
+				054060161C4F187000A6E348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05405FEC1C4F187000A6E348 /* Project object */;
+}
