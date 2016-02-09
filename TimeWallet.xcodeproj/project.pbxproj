@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05085C131C698FA0003AF970 /* ClientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05085C121C698F9F003AF970 /* ClientDetailsViewController.swift */; };
 		05405FF81C4F187000A6E348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05405FF71C4F187000A6E348 /* AppDelegate.swift */; };
 		05405FFA1C4F187000A6E348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05405FF91C4F187000A6E348 /* ViewController.swift */; };
 		05405FFD1C4F187000A6E348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05405FFB1C4F187000A6E348 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		054060261C4F1DA500A6E348 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060251C4F1DA500A6E348 /* Client.swift */; };
 		054060281C4F1DC300A6E348 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060271C4F1DC300A6E348 /* Service.swift */; };
 		0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */; };
+		0560C9E71C4F351B009A9AAA /* MyClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560C9E61C4F351B009A9AAA /* MyClientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05085C121C698F9F003AF970 /* ClientDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDetailsViewController.swift; sourceTree = "<group>"; };
 		05405FF41C4F187000A6E348 /* TimeWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05405FF71C4F187000A6E348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05405FF91C4F187000A6E348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		054060251C4F1DA500A6E348 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = ../Client.swift; sourceTree = "<group>"; };
 		054060271C4F1DC300A6E348 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../Service.swift; sourceTree = "<group>"; };
 		0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDataService.swift; sourceTree = "<group>"; };
+		0560C9E61C4F351B009A9AAA /* MyClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05085C141C698FAC003AF970 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05405FF91C4F187000A6E348 /* ViewController.swift */,
+				0560C9E61C4F351B009A9AAA /* MyClientViewController.swift */,
+				05085C121C698F9F003AF970 /* ClientDetailsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		05405FEB1C4F187000A6E348 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +139,10 @@
 		05405FF61C4F187000A6E348 /* TimeWallet */ = {
 			isa = PBXGroup;
 			children = (
+				05085C141C698FAC003AF970 /* Controller */,
 				0540602A1C4F1E2500A6E348 /* Service */,
 				054060291C4F1E1600A6E348 /* Model */,
 				05405FF71C4F187000A6E348 /* AppDelegate.swift */,
-				05405FF91C4F187000A6E348 /* ViewController.swift */,
 				05405FFB1C4F187000A6E348 /* Main.storyboard */,
 				05405FFE1C4F187000A6E348 /* Assets.xcassets */,
 				054060001C4F187000A6E348 /* LaunchScreen.storyboard */,
@@ -287,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05085C131C698FA0003AF970 /* ClientDetailsViewController.swift in Sources */,
+				0560C9E71C4F351B009A9AAA /* MyClientViewController.swift in Sources */,
 				05405FFA1C4F187000A6E348 /* ViewController.swift in Sources */,
 				05405FF81C4F187000A6E348 /* AppDelegate.swift in Sources */,
 				0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */,
@@ -490,6 +506,7 @@
 				054060131C4F187000A6E348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054060141C4F187000A6E348 /* Build configuration list for PBXNativeTarget "TimeWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				054060161C4F187000A6E348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
