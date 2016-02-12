@@ -25,6 +25,9 @@
 		054060281C4F1DC300A6E348 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054060271C4F1DC300A6E348 /* Service.swift */; };
 		0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */; };
 		0560C9E71C4F351B009A9AAA /* MyClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560C9E61C4F351B009A9AAA /* MyClientViewController.swift */; };
+		058AF5F11C6D90DC000A4F67 /* ApplicationProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AF5F01C6D90DC000A4F67 /* ApplicationProps.swift */; };
+		058AF5F41C6D91E2000A4F67 /* ServiceDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AF5F31C6D91E2000A4F67 /* ServiceDataService.swift */; };
+		058AF5F61C6D92C4000A4F67 /* TimeEntryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AF5F51C6D92C4000A4F67 /* TimeEntryDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		054060271C4F1DC300A6E348 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../Service.swift; sourceTree = "<group>"; };
 		0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDataService.swift; sourceTree = "<group>"; };
 		0560C9E61C4F351B009A9AAA /* MyClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClientViewController.swift; sourceTree = "<group>"; };
+		058AF5F01C6D90DC000A4F67 /* ApplicationProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProps.swift; sourceTree = "<group>"; };
+		058AF5F31C6D91E2000A4F67 /* ServiceDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDataService.swift; sourceTree = "<group>"; };
+		058AF5F51C6D92C4000A4F67 /* TimeEntryDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeEntryDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 				05405FFE1C4F187000A6E348 /* Assets.xcassets */,
 				054060001C4F187000A6E348 /* LaunchScreen.storyboard */,
 				054060031C4F187000A6E348 /* Info.plist */,
+				058AF5F21C6D9137000A4F67 /* Config */,
 			);
 			path = TimeWallet;
 			sourceTree = "<group>";
@@ -174,8 +181,18 @@
 			isa = PBXGroup;
 			children = (
 				0540602B1C4F1E3D00A6E348 /* ClientDataService.swift */,
+				058AF5F31C6D91E2000A4F67 /* ServiceDataService.swift */,
+				058AF5F51C6D92C4000A4F67 /* TimeEntryDataService.swift */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		058AF5F21C6D9137000A4F67 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				058AF5F01C6D90DC000A4F67 /* ApplicationProps.swift */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058AF5F11C6D90DC000A4F67 /* ApplicationProps.swift in Sources */,
+				058AF5F41C6D91E2000A4F67 /* ServiceDataService.swift in Sources */,
 				05085C131C698FA0003AF970 /* ClientDetailsViewController.swift in Sources */,
 				0560C9E71C4F351B009A9AAA /* MyClientViewController.swift in Sources */,
 				05405FFA1C4F187000A6E348 /* ViewController.swift in Sources */,
 				05405FF81C4F187000A6E348 /* AppDelegate.swift in Sources */,
 				0540602C1C4F1E3D00A6E348 /* ClientDataService.swift in Sources */,
+				058AF5F61C6D92C4000A4F67 /* TimeEntryDataService.swift in Sources */,
 				054060281C4F1DC300A6E348 /* Service.swift in Sources */,
 				054060261C4F1DA500A6E348 /* Client.swift in Sources */,
 				054060241C4F1D8400A6E348 /* TimeEntry.swift in Sources */,

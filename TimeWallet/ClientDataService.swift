@@ -9,13 +9,12 @@
 import Foundation
 
 class ClientDataService: NSObject {
-    let testMode:Bool = true
     
     //MARK: Client Data
     func getUserClients(userName: String) -> [Client] {
         var returnClients:[Client] = []
         
-        if(testMode){
+        if(ApplicationProps.testMode){
             for index in 1...10 {
                 var newClient: Client = Client()
                 newClient.name = "Name-\(index)"
